@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Why Us', href: '#' },
   { name: 'About Us', href: '#' },
   { name: 'Contact Us', href: '#' },
-]
+] 
 
 const Navbar = () => {
   
