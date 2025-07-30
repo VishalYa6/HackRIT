@@ -10,12 +10,12 @@ const HeroSection = () => {
             <section className="pt-12 bg-gray-50 sm:pt-16">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h1 className="px-6 text-lg text-gray-600 font-inter">Smart email campaign builder, made for Developers</h1>
-                        <p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-                            Turn your visitors into profitable
+                        <h1 className="px-6 text-lg text-gray-600 font-inter"></h1>
+                        <p className="mt-8 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj">
+                             Secure Your Digital World with 
                             <span className="relative inline-flex sm:inline">
                                 <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-                                <span className="relative"> business </span>
+                                <span className="relative"> Ethical Hackers</span>
                             </span>
                         </p>
 
@@ -38,16 +38,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="pb-12 bg-white">
-                    <div className="relative">
-                        <div className="absolute inset-0 h-2/3 bg-gray-50"></div>
-                        <div className="relative mx-auto">
-                            <div className="lg:max-w-6xl lg:mx-auto">
-                                <img className="transform scale-110" src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/2/illustration.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
         </div>
     );
