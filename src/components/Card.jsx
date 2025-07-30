@@ -1,6 +1,6 @@
 import React from 'react';
 import UnOrderedList2 from './UnOrderedList2';
-// Move this to a separate file if needed
+
 const cardData = [
   {
     title: 'Security Focused',
