@@ -17,17 +17,13 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
 
-    <header className="absolute inset-x-0 top-0 z-50">
+   <header className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 backdrop-blur-sm">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">HackRIT</span>
-            <img
-              alt=""
-              src="https://www.vhv.rs/dpng/d/514-5141448_hacking-logo-png-hacker-logo-png-transparent-png.png"
-              className="h-12 w-auto"
-            />
-          </a>
+              <span className="sr-only"></span>
+              <p className="  sm:text-3xl lg:text-3xl text-purple-700"><strong>HackRIT</strong></p>
+            </a>  
         </div>
         <div className="flex lg:hidden">
           <button
@@ -45,7 +41,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold text-gray-900 hover:text-blue-600 px-2 py-1 transition-colors duration-200"
+              className=" text-base lg:text-lg font-semibold text-gray-900 hover:text-blue-600 px-2 py-1 transition-colors duration-200"
             >
               {item.name}
             </a>
