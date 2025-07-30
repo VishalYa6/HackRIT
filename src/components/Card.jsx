@@ -36,7 +36,7 @@ const Card = () => {
     <div className="about-container">
       <p className="about-title font-bold">Why Choose HackRIT ?</p>
       <p className='mt-5'>HackRIT combines ethical talent and robust tools to deliver unmatched security insights tailored to your needs.</p>
-      <div className="flex justify-center items-start mt-6 gap-x-8 flex-wrap">
+      <div className="flex mx-auto justify-center items-start mt-6 gap-x-8 flex-wrap">
         {cardData.map((card, index) => (
           <div
             key={index}
