@@ -1,8 +1,9 @@
 import React from 'react'
+import Card from './Card'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+   <Card/>
   )
 }
 

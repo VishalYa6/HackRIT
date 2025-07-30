@@ -1,16 +1,56 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Root styles */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(22, 22, 22, 0.87);
   background-color: white;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility classes */
+
+/* Primary color hover */
+.hover-primary:hover {
+  color: blue;
+}
+
+/* Container styles for AboutUs */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  padding: 3rem;
+}
+
+/* Title styles */
+.about-title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+/* Card wrapper hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }

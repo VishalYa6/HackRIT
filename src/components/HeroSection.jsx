@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 const HeroSection = () => {
-    const [expanded, setExpanded] = useState(false);
+   // const [expanded, setExpanded] = useState(false);
 
     return (
         <div className="overflow-x-hidden bg-gray-50">
