@@ -33,16 +33,16 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className="about-container">
-      <p className="about-title font-bold">Why Choose HackRIT ?</p>
-      <p className='mt-5'>HackRIT combines ethical talent and robust tools to deliver unmatched security insights tailored to your needs.</p>
-      <div className="flex mx-auto justify-center items-start mt-6 gap-x-8 flex-wrap">
+    <div className="about-container px-4 sm:px-8 md:px-16 lg:px-24">
+      <p className="about-title font-bold text-center">Why Choose HackRIT ?</p>
+      <p className='mt-5 text-center'>HackRIT combines ethical talent and robust tools to deliver unmatched security insights tailored to your needs.</p>
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch mt-6 gap-6">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="w-96 p-6 bg-white rounded-xl shadow-2xl shadow-blue-10 hover:scale-105 transition-transform duration-300"
+            className="w-full sm:w-80 md:w-96 p-6 bg-white rounded-xl shadow-2xl shadow-blue-10 hover:scale-105 transition-transform duration-300 mb-4 sm:mb-0"
           >
-            <h3 className="text-xl font-semibold mb-4">{card.title}</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center">{card.title}</h3>
             <UnOrderedList2 items={card.features} />
           </div>
         ))}
