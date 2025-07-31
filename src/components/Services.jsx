@@ -15,7 +15,7 @@ const serviceList = [
 			"Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.",
 	},
 	{
-		color: "blue",
+		color: "green",
 		icon: faRandom,
 		title: "Content Marketing",
 		description:
