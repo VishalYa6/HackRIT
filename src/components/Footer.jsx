@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTwitter, FaYoutube, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -31,26 +32,26 @@ const Footer = () => {
           <h6 className="text-lg font-semibold mb-4">Social</h6>
           <div className="flex space-x-4">
             {/* Twitter */}
-            <a href="#" aria-label="Twitter">
-              <svg className="w-6 h-6 text-white hover:text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 4.557c-..." />
-              </svg>
+            <a href="#" aria-label="Twitter"
+              className="text-purple-600 hover:shadow-lg hover:shadow-purple-400 transition-shadow duration-300 rounded-full p-1"
+            >
+              <FaTwitter className="w-6 h-6" />
             </a>
             {/* YouTube */}
-            <a href="#" aria-label="YouTube">
-              <svg className="w-6 h-6 text-white hover:text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.615 3.184c-..." />
-              </svg>
+            <a href="#" aria-label="YouTube"
+              className="text-purple-600 hover:shadow-lg hover:shadow-purple-400 transition-shadow duration-300 rounded-full p-1"
+            >
+              <FaYoutube className="w-6 h-6" />
             </a>
             {/* Facebook */}
-            <a href="#" aria-label="Facebook">
-              <svg className="w-6 h-6 text-white hover:text-blue-700" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 8h-3v4h3v12h5v-..." />
-              </svg>
+            <a href="#" aria-label="Facebook"
+              className="text-purple-600 hover:shadow-lg hover:shadow-purple-400 transition-shadow duration-300 rounded-full p-1 "
+            >
+              <FaFacebook className="w-6 h-6" />
             </a>
           </div>
         </div>
-      </div>
+        </div>
     </footer>
   );
 };
