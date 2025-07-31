@@ -19,7 +19,7 @@ const serviceList = [
 		icon: faRandom,
 		title: "Content Marketing",
 		description:
-			"It's easier to reach yours have the right savings account. It's easier to reach your savings goals when you have the right savings account",
+			"It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals when you have the right savings account",
 	},
 	{
 		color: "yellow",
@@ -31,14 +31,14 @@ const serviceList = [
 ];
 
 const ServiceItem = ({ service }) => (
-	<div className="bg-white dark:bg-gray-100 h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
+	<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
 		<div
-			className={`w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-${service.color}-600 bg-opacity-10 text-${service.color}-600`}
+			className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black"
 		>
 			<FontAwesomeIcon icon={service.icon} />
 		</div>
-		<h4 className="font-medium text-2xl mb-4 text-gray-900 dark:text-gray-900">{service.title}</h4>
-		<p className="opacity-80 text-gray-700 dark:text-gray-700">{service.description}</p>
+		<h4 className="font-medium text-2xl mb-4 text-black">{service.title}</h4>
+		<p className="text-black opacity-80">{service.description}</p>
 	</div>
 );
 
@@ -48,14 +48,14 @@ ServiceItem.propTypes = {
 
 const Services = () => {
 	return (
-		<section className="ezy__service2 light py-14 md:py-24 bg-white text-zinc-900 dark:text-white">
+		<section className="ezy__service2 light py-14 md:py-24 bg-white text-black">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-12 md:mb-12">
 					<div className="col-span-12 lg:col-span-6 lg:col-start-4 text-center">
-						<h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6">
+						<h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6 text-black">
 							Services We Provide
 						</h2>
-						<p className="text-lg opacity-80">
+						<p className="text-lg opacity-80 text-black">
 							Assumenda non repellendus distinctio nihil dicta sapiente,
 							quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
 						</p>
