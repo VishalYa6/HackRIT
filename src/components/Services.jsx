@@ -1,46 +1,45 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faCamera,
-	faCannabis,
-	faRandom,
-} from "@fortawesome/free-solid-svg-icons";
+import { IoMdBug } from "react-icons/io";
+import { FaFileWaveform } from "react-icons/fa6";
+import { GiComputerFan } from "react-icons/gi";
 import PropTypes from "prop-types";
 
 const serviceList = [
 	{
-		color: "red",
-		icon: faCannabis,
-		title: "Branding",
-		description:
-			"Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.",
+		color: "blue",
+		icon: IoMdBug,
+		title: "Bug Bounty",
+		description:"Reward-based program where ethical hackers identify and report security vulnerabilities.Helps organizations find flaws before malicious actors can exploit them."
 	},
 	{
 		color: "green",
-		icon: faRandom,
-		title: "Content Marketing",
+		icon: FaFileWaveform,
+		title: "VDP",
 		description:
-			"It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals when you have the right savings account",
+			"A structured way for the public to report security issues responsibly.Promotes transparency and coordinated vulnerability resolution.",
 	},
 	{
 		color: "yellow",
-		icon: faCamera,
-		title: "Web Development",
+		icon: GiComputerFan,
+		title: "Pentesting",
 		description:
-			"Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+			"In-depth, simulated cyberattacks conducted by security professionals.Identifies real-world vulnerabilities across systems, applications, and networks.",
 	},
 ];
 
-const ServiceItem = ({ service }) => (
-	<div className="bg-white dark:bg-slate-800 h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
-		<div
-			className={`w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-${service.color}-600 bg-opacity-10 text-${service.color}-600`}
-		>
-			<FontAwesomeIcon icon={service.icon} />
+const ServiceItem = ({ service }) => {
+	const IconComponent = service.icon;
+	return (
+		<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12 transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-105 cursor-pointer">
+			<div
+				className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:bg-blue-50"
+			>
+				<IconComponent className="transition-all duration-300" />
+			</div>
+			<h4 className="font-medium text-2xl mb-4 text-black transition-all duration-300">{service.title}</h4>
+			<p className="text-black opacity-80 transition-all duration-300 hover:opacity-100">{service.description}</p>
 		</div>
-		<h4 className="font-medium text-2xl mb-4">{service.title}</h4>
-		<p className="opacity-80">{service.description}</p>
-	</div>
-);
+	);
+};
 
 ServiceItem.propTypes = {
 	service: PropTypes.object.isRequired,
@@ -48,16 +47,15 @@ ServiceItem.propTypes = {
 
 const Services = () => {
 	return (
-		<section className="ezy__service2 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+		<section className="ezy__service2 light py-14 md:py-24 bg-white text-black">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-12 md:mb-12">
 					<div className="col-span-12 lg:col-span-6 lg:col-start-4 text-center">
-						<h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6">
+						<h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6 text-black">
 							Services We Provide
 						</h2>
-						<p className="text-lg opacity-80">
-							Assumenda non repellendus distinctio nihil dicta sapiente,
-							quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
+						<p className="text-lg opacity-80 text-black">
+							A unified cybersecurity platform offering Bug Bounty, VDP, and Penetration Testing services to help organizations identify, report, and remediate vulnerabilities through ethical hacking and expert-driven security assessments.
 						</p>
 					</div>
 				</div>

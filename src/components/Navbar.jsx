@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { SiHackaday } from "react-icons/si";
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -22,7 +23,7 @@ const Navbar = () => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only"></span>
-              <p className="  sm:text-3xl lg:text-3xl text-purple-700"><strong>HackRIT</strong></p>
+              <p className="flex flex-row gap-2 sm:text-3xl lg:text-3xl text-blue-600"><SiHackaday className='' /><strong>HackRIT</strong></p>
             </a>  
         </div>
         <div className="flex lg:hidden">

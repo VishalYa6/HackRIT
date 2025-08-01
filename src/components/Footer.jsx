@@ -9,10 +9,10 @@ const Footer = () => {
         <div>
           <h6 className="text-lg font-semibold mb-4">Services</h6>
           <ul className="space-y-2">
-            <li><a className="hover:underline">Branding</a></li>
-            <li><a className="hover:underline">Design</a></li>
-            <li><a className="hover:underline">Marketing</a></li>
-            <li><a className="hover:underline">Advertisement</a></li>
+            <li><a className="hover:underline">Bug Bounty</a></li>
+            <li><a className="hover:underline">VDP</a></li>
+            <li><a className="hover:underline">Pentesting</a></li>
+            
           </ul>
         </div>
 
