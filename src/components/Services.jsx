@@ -1,46 +1,46 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faCamera,
-	faCannabis,
-	faRandom,
-} from "@fortawesome/free-solid-svg-icons";
+import { IoMdBug } from "react-icons/io";
+import { FaFileWaveform } from "react-icons/fa6";
+import { GiComputerFan } from "react-icons/gi";
 import PropTypes from "prop-types";
 
 const serviceList = [
 	{
-		color: "red",
-		icon: faCannabis,
-		title: "Branding",
+		color: "blue",
+		icon: IoMdBug,
+		title: "Bug Bounty",
 		description:
 			"Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.",
 	},
 	{
 		color: "green",
-		icon: faRandom,
-		title: "Content Marketing",
+		icon: FaFileWaveform,
+		title: "VDP",
 		description:
 			"It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals when you have the right savings account",
 	},
 	{
 		color: "yellow",
-		icon: faCamera,
-		title: "Web Development",
+		icon: GiComputerFan,
+		title: "Pentesting",
 		description:
 			"Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
 	},
 ];
 
-const ServiceItem = ({ service }) => (
-	<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
-		<div
-			className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black"
-		>
-			<FontAwesomeIcon icon={service.icon} />
+const ServiceItem = ({ service }) => {
+	const IconComponent = service.icon;
+	return (
+		<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
+			<div
+				className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black"
+			>
+				<IconComponent />
+			</div>
+			<h4 className="font-medium text-2xl mb-4 text-black">{service.title}</h4>
+			<p className="text-black opacity-80">{service.description}</p>
 		</div>
-		<h4 className="font-medium text-2xl mb-4 text-black">{service.title}</h4>
-		<p className="text-black opacity-80">{service.description}</p>
-	</div>
-);
+	);
+};
 
 ServiceItem.propTypes = {
 	service: PropTypes.object.isRequired,
@@ -56,8 +56,7 @@ const Services = () => {
 							Services We Provide
 						</h2>
 						<p className="text-lg opacity-80 text-black">
-							Assumenda non repellendus distinctio nihil dicta sapiente,
-							quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
+						A unified cybersecurity platform offering Bug Bounty, VDP, and Penetration Testing services to help organizations identify, report, and remediate vulnerabilities through ethical hacking and expert-driven security assessments.
 						</p>
 					</div>
 				</div>
