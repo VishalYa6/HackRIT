@@ -8,36 +8,35 @@ const serviceList = [
 		color: "blue",
 		icon: IoMdBug,
 		title: "Bug Bounty",
-		description:
-			"Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.",
+		description:"Reward-based program where ethical hackers identify and report security vulnerabilities.Helps organizations find flaws before malicious actors can exploit them."
 	},
 	{
 		color: "green",
 		icon: FaFileWaveform,
 		title: "VDP",
 		description:
-			"It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals when you have the right savings account",
+			"A structured way for the public to report security issues responsibly.Promotes transparency and coordinated vulnerability resolution.",
 	},
 	{
 		color: "yellow",
 		icon: GiComputerFan,
 		title: "Pentesting",
 		description:
-			"Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+			"In-depth, simulated cyberattacks conducted by security professionals.Identifies real-world vulnerabilities across systems, applications, and networks.",
 	},
 ];
 
 const ServiceItem = ({ service }) => {
 	const IconComponent = service.icon;
 	return (
-		<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12">
+		<div className="bg-white h-full shadow-xl rounded-[20px] p-6 lg:px-6 lg:py-12 transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-105 cursor-pointer">
 			<div
-				className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black"
+				className="w-24 h-24 rounded-full text-3xl inline-flex justify-center items-center mb-6 bg-gray-100 text-black transform transition-all duration-300 hover:scale-110 hover:rotate-3 hover:bg-blue-50"
 			>
-				<IconComponent />
+				<IconComponent className="transition-all duration-300" />
 			</div>
-			<h4 className="font-medium text-2xl mb-4 text-black">{service.title}</h4>
-			<p className="text-black opacity-80">{service.description}</p>
+			<h4 className="font-medium text-2xl mb-4 text-black transition-all duration-300">{service.title}</h4>
+			<p className="text-black opacity-80 transition-all duration-300 hover:opacity-100">{service.description}</p>
 		</div>
 	);
 };
@@ -56,7 +55,7 @@ const Services = () => {
 							Services We Provide
 						</h2>
 						<p className="text-lg opacity-80 text-black">
-						A unified cybersecurity platform offering Bug Bounty, VDP, and Penetration Testing services to help organizations identify, report, and remediate vulnerabilities through ethical hacking and expert-driven security assessments.
+							A unified cybersecurity platform offering Bug Bounty, VDP, and Penetration Testing services to help organizations identify, report, and remediate vulnerabilities through ethical hacking and expert-driven security assessments.
 						</p>
 					</div>
 				</div>
